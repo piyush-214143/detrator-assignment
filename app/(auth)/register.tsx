@@ -1,5 +1,5 @@
 // app/signup.tsx
-import { Stack, useRouter } from 'expo-router';
+import { Stack } from 'expo-router';
 import {
   View,
   Text,
@@ -10,10 +10,8 @@ import {
 } from 'tamagui';
 import { useState } from 'react';
 
-
 export default function register() {
   const [phoneNumber, setPhoneNumber] = useState('');
-const router = useRouter();
 
   return (
     <>
@@ -30,7 +28,7 @@ const router = useRouter();
 
         {/* Center Logo Image */}
         <Image
-          source={require("../assets/signup_logo.png")} // change path as needed
+          source={require('../../assets/signup_logo.png')} // change path as needed
           width={180}
           height={180}
           resizeMode="contain"
@@ -79,7 +77,6 @@ const router = useRouter();
           fontWeight="700"
           borderRadius={10}
           width="100%"
-           onPress={() => router.push('/verify')}
         >
           Send Me The Code
         </Button>
