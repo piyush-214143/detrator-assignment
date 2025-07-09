@@ -10,4 +10,3 @@ export default function AuthLayout() {
 }
 
 
-// this is to show just a demo
