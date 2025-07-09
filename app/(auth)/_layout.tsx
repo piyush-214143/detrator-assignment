@@ -8,3 +8,6 @@ export default function AuthLayout() {
     </Stack>
   );
 }
+
+
+// this is to show just a demo
